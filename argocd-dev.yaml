@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kay-uat
+  name: kay-demo
   namespace: argocd
 spec:
   project: default
   # Source of the application manifests
   source:
     repoURL: https://github.com/kay71029/argocd-demo.git
-    targetRevision: uat
-    path: yamls-uat
+    targetRevision: dev
+    path: yamls-dev
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
