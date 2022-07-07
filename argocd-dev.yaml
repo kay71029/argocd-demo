@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kay-demo
+  name: kay-dev
   namespace: argocd
 spec:
   project: default
